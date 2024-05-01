@@ -7,10 +7,10 @@ public interface IRepository<T>{
     void Remove(T entity);
     void Update(T entity);
     IEnumerable<T> GetAll();
-    T Get(Guid id);
+    T Get(int id);
     void Save();
     bool Exists(T entity);
-    bool ExistsWithId(Guid id);
+    bool ExistsWithId(int id);
 
 
 }

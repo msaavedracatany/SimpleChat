@@ -55,18 +55,8 @@ public abstract class BaseRepository<T> : IRepository<T> where T : class
         }   
     }
 
-    public IEnumerable<T> GetAll()
-    {
-        throw new NotImplementedException();
-    }
+    public abstract IEnumerable<T> GetAll();
 
-    public T Get(Guid id)
-    {
-        throw new NotImplementedException();
-    }
+    public abstract T Get(int id);
 
-    public bool ExistsWithId(Guid id)
-    {
-        throw new NotImplementedException();
-    }
 }
